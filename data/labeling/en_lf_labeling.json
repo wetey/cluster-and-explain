@@ -1,0 +1,66 @@
+[
+    {
+        "cluster":0,
+        "label":" Racially\/ethnically charged derogatory statements and anti-immigrant sentiments."
+    },
+    {
+        "cluster":1,
+        "label":" Hate speech and religious intolerance."
+    },
+    {
+        "cluster":2,
+        "label":" Explicit\/Sexual Content and Objectification.\n\nExplanation:\n\nThe first document contains explicit and graphic language describing sexual acts and violence. The second document implies that a woman needs to have sex with a man, objectifying her and reducing her to a sexual object. The third document, while not as explicit, still contains sexual language and promotes the idea of mandatory vasectomies for all men, which is both unrealistic and invasive. The fourth document"
+    },
+    {
+        "cluster":3,
+        "label":" Threatening\/Violent Language and Racial Slur.\n\nThe first document contains the phrase \"I will die you,\" which can be interpreted as a threat or violent language. The second document contains the racial slur \"sheep was created.\" Together, these documents can be labeled as containing Threatening\/Violent Language and Racial Slur."
+    },
+    {
+        "cluster":4,
+        "label":" Racial\/Ethnic Slurs and Offensive Language."
+    },
+    {
+        "cluster":5,
+        "label":" Misogyny, Racism, Xenophobia, Homophobia, Transphobia, Anti-religious, Violence promotion, Body shaming, Victim blaming, Slavery apology, Nationalism, Incorrect generalization."
+    },
+    {
+        "cluster":6,
+        "label":" Racial slurs, misogyny, and homophobia."
+    },
+    {
+        "cluster":7,
+        "label":" Homophobic, misogynistic, and racist language."
+    },
+    {
+        "cluster":8,
+        "label":" Racial slurs and discrimination."
+    },
+    {
+        "cluster":9,
+        "label":" Hate speech and discrimination towards various groups including racial minorities, women, immigrants, and religious minorities."
+    },
+    {
+        "cluster":10,
+        "label":" \"Threatening\/Violent Language\"\n\nThe label \"Threatening\/Violent Language\" is appropriate for this group of documents because the statement \"let them go back in the plane and send them to timbuktu\" implies a physical threat or harm towards a specific group of people. It is important to note that using language that promotes or implies violence is not appropriate or acceptable in any context."
+    },
+    {
+        "cluster":11,
+        "label":" \"Islamophobic and threatening language\"\n\nThe document contains offensive language directed towards Ilhan Omar, a Somali-American politician, by implying that she is trying to impose Sharia law on America and threatening her with violence. The language used in the document is discriminatory and dehumanizing, targeting Ilhan Omar based on her ethnicity and religious beliefs. Therefore, the appropriate group label for this document would be \"Islamophob"
+    },
+    {
+        "cluster":12,
+        "label":" \"Holocaust comparison or reference\"\n\nThese statements appear to make inappropriate comparisons to or references about the Holocaust, in which millions of Jews and other marginalized groups were systematically murdered during World War II. It is essential to treat such topics with respect and to avoid trivializing or sensationalizing the associated atrocities."
+    },
+    {
+        "cluster":13,
+        "label":" Offensive language and hate speech towards specific groups (AOC, minorities, LGBTQ+ community, Israel, etc.) and advocacy for violence against certain countries (Iran)."
+    },
+    {
+        "cluster":14,
+        "label":" Holocaust denial and antisemitic tropes."
+    },
+    {
+        "cluster":15,
+        "label":" Offensive language and hate speech towards various groups (e.g. Middle Eastern people, women, Nigerians, Muslims, black women, and those with different sexual orientations)."
+    }
+]

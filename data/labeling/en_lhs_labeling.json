@@ -1,0 +1,34 @@
+[
+    {
+        "cluster":0,
+        "label":" This group of documents contains hate speech and discrimination towards various groups based on race, ethnicity, gender, and religion. These statements include harmful stereotypes, offensive language, and calls for violence.\n\nGroup label: Hate speech and discrimination."
+    },
+    {
+        "cluster":1,
+        "label":" Offensive language and discrimination based on race, gender, and religion."
+    },
+    {
+        "cluster":2,
+        "label":" 1. Homophobic\/Hate Speech\n2. Misogynistic\/Misogyny\n3. Racial Slurs\/Racism\n4. General Offensive Language\n5. Religious Intolerance\n6. Promotion of Violence\n7. Body Shaming\n8. Trolling\/Harassment\n\nExplanation:\n\n1. Homophobic\/Hate Speech: Documents containing language that"
+    },
+    {
+        "cluster":3,
+        "label":" Offensive Language and Hate Speech: This group of documents contains various examples of offensive language and hate speech, including racial slurs, homophobic remarks, misogyny, and religious intolerance. The language used in these documents is disrespectful, harmful, and creates a hostile environment."
+    },
+    {
+        "cluster":4,
+        "label":" Offensive Language and Racial Slurs - This group of documents contains derogatory and offensive language, including racial slurs, hate speech, and violent imagery. Some common themes include anti-black racism, xenophobia, and homophobia. Many of the documents also contain misogynistic and sexist language, and express support for harmful policies and actions towards marginalized communities."
+    },
+    {
+        "cluster":5,
+        "label":" Offensive Language and Hate Speech. This group of documents contains various examples of offensive language, hate speech, and discriminatory remarks based on race, religion, and nationality. The language used in these documents is harmful, disrespectful, and can incite hostility and violence."
+    },
+    {
+        "cluster":6,
+        "label":" 1. Religious bias\/Islamophobia\n2. Racial\/ethnic slurs\n3. Anti-Semitism\n4. Misogyny\n5. Xenophobia\/Anti-immigrant\n6. Generalized hate speech\n7. Political bias\n8. Ableism\n\nGroup label: Mixed hate speech. This group contains a mix of different types of hate speech, including religious bias, racial\/"
+    },
+    {
+        "cluster":7,
+        "label":" Offensive Language: Misogyny, Homophobia, Racism, Transphobia, Anti-Semitism.\n\nExplanation:\n\n* Misogyny: Documents 1, 2, 6, 9, 10, 12, 14\n* Homophobia: Documents 1, 3, 8\n* Racism: Documents 4, 11\n"
+    }
+]
