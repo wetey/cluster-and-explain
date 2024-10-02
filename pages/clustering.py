@@ -7,18 +7,17 @@ EMBEDDING_SELECTION = st.session_state['embedding_selection']
 
 dataset = pd.read_json(f'data/clustering/{LANGUAGE_SELECTION}_{EMBEDDING_SELECTION}_clustering.json')
 
-scatter = alt.Chart(dataset).mark_point(size=200, filled=True).encode(
+scatter = alt.Chart(dataset).mark_point(size=300, filled=True).encode(
     x = alt.X('x:Q', axis=None),
     y = alt.Y('y:Q', axis=None),
     color = alt.Color('cluster:N',
                       scale=alt.Scale(scheme='category20b')
                       ).legend(direction = 'vertical', 
                                symbolSize = 200, 
-                               labelFontSize=14, 
-                               titleFontSize=20,
-                               titleColor='black',
-                               labelColor='black'),
-    #TODO change the predicated and label to strings
+                               labelFontSize=20, 
+                               titleFontSize=24,
+                               titleColor='#888da7',
+                               labelColor='#888da7'),
     tooltip = ['cluster:N',"string_pred:N", "string_label:N"],
     ).properties(
         width = 1000,
