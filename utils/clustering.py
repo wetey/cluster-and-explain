@@ -1,12 +1,11 @@
-from typing import Any
-import streamlit as st
 import pandas as pd
 import altair as alt
+import plotly.express as px
+import streamlit as st
 
 def clustering(cluster_path, session):
 
     cluster = pd.read_json(cluster_path)
-
     selection = alt.selection_point("point_selection",fields=['cluster'], bind = 'legend')
     color = alt.condition(
         selection,
@@ -25,8 +24,23 @@ def clustering(cluster_path, session):
         y = alt.Y('y:Q', axis=None),
         color = color,
         tooltip = ['cluster:N',"string_pred:N", "string_label:N"],
+        shape = alt.Shape('string_pred:N', 
+                          scale=alt.Scale(
+                              range = ['circle', 'diamond', 'square']
+                          )).legend(direction = 'vertical', 
+                                    symbolSize = 200, 
+                                    labelFontSize=20, 
+                                    titleFontSize=24,
+                                    titleColor='#888da7',
+                                    labelColor='#888da7',
+                                    title = 'predicted'), 
         ).properties(
             width = 1000,
             height = 600
         ).add_params(selection).interactive()
+    
+    st.altair_chart(scatter)
+
+    
+
 

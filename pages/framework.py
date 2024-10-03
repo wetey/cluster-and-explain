@@ -32,21 +32,18 @@ with st.sidebar:
                                 format_func=lambda x: language_options.get(x),
                                 placeholder="select a language...",
                                 index = None)
-                                # key = "language_selection")
 
         embedding_type = st.selectbox(label = "embedding type",
                                     options = ('lhs', 'sb', 'lf', 'concat'),
                                     format_func=lambda x: embedding_options.get(x),
                                     placeholder="select an embedding type...",
                                     index = None)
-                                    #   key = "embedding_selection")
 
         operation = st.selectbox("Operation", 
                             ("labeling", "summaries"),
                             format_func=lambda x: operation_options.get(x),
                             placeholder="select an operation...",
                             index = None)
-                            # key = "operation_selection")
 
         submit = st.form_submit_button("submit")
 
@@ -59,12 +56,22 @@ with st.sidebar:
                                 explain_path, 
                                 cluster_path)
             
+    st.markdown('''## navigating the interface 
+
+### interactive clustering plot: 
+if you hover over the data points you can see more information about the data point. if you want to see all the points that belong to a specfic cluster, select the cluster you\'re interested in by clicking the cluster number from the legend. you can select multiple cluster by holding down the shift button and selecting all clusters you\'re interested in.
+                
+    ''')
+
 if session.cluster_path is not None:
     st.markdown('## clustering')
     clustering(cluster_path, session)
+    
 
 if session.explain_path is not None:
     if session.operation == 'labeling':
         st.markdown(f'## labels')
     else:
         st.markdown(f'## {session.operation}')
+    
+    explanation(explain_path,session)
