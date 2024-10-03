@@ -1,6 +1,5 @@
 import pandas as pd
 import altair as alt
-import plotly.express as px
 import streamlit as st
 
 def clustering(cluster_path, session):
