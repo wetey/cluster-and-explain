@@ -2,7 +2,7 @@ import pandas as pd
 import altair as alt
 import streamlit as st
 
-def clustering(cluster_path, session):
+def clustering(cluster_path):
 
     cluster = pd.read_json(cluster_path)
     selection = alt.selection_point("point_selection",fields=['cluster'], bind = 'legend')
@@ -22,7 +22,7 @@ def clustering(cluster_path, session):
         x = alt.X('x:Q', axis=None),
         y = alt.Y('y:Q', axis=None),
         color = color,
-        tooltip = ['cluster:N',"string_pred:N", "string_label:N"],
+        tooltip = ['cluster:N',"string_pred:N", "string_label:N", "content:N"],
         shape = alt.Shape('string_pred:N', 
                           scale=alt.Scale(
                               range = ['circle', 'diamond', 'square']
@@ -34,11 +34,12 @@ def clustering(cluster_path, session):
                                     labelColor='#888da7',
                                     title = 'predicted'), 
         ).properties(
-            width = 1000,
-            height = 600
+            width = 1200,
+            height = 700
         ).add_params(selection).interactive()
     
     st.altair_chart(scatter)
+
 
     
 

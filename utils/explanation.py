@@ -2,8 +2,11 @@ import streamlit as st
 import os
 import pandas as pd
 
+def multiselect():
+    pass
 
 def explanation(explain_path, session):
+
     explain = pd.read_json(explain_path)
 
     clusters = explain.cluster.tolist()
@@ -12,8 +15,12 @@ def explanation(explain_path, session):
         operation = 'label'
     else:
         operation = 'summary'
-    
-    for cluster in clusters:
-        st.markdown(f'''### cluster: {cluster}
-#### {operation}: 
-{explain[operation][cluster]}''')
+
+    options = st.multiselect(" ",
+                                clusters,
+                                default = None)
+
+    if st.button('view information about cluster(s)'):
+        for option in options:
+            st.markdown(f'### cluster {option}')
+            st.markdown(f'{explain[operation][option]}')
